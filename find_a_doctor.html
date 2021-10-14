@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="main.css">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <title>find a doctor</title>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style42.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+</head>
+
+<body class="tonight">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="hospital_main.html"><img src="pictures/manocha-eye-hospital-retina.png"
+                    width="150px" heigth="150px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="hospital_main.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="find_a_doctor.html">Find a doctor</a></li>
+                            <li><a class="dropdown-item" href="Surgery.html">Surgery</a></li>
+                            <li>
+                                <a class="dropdown-item" href="blood_test.html">Blood test</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br />
+
+    <div class="container">
+        <br />
+        <br />
+
+        <div class="title">Find a doctor</div>
+        <div class="content">
+            <form action="find_a_doctor.php" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First name</span>
+                        <input type="text" name="first_name" id="first_name" placeholder="Enter your first name"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last name</span>
+                        <input type="text" name="last_name" id="last_name" placeholder="Enter your last username"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" name="Phonenumber" id="Phonenumber" placeholder="Enter your number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Age</span>
+                        <input type="number" name="age" id="age" placeholder="Enter your age" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <textarea style="border-radius: 10px;border-color: rgb(201, 201, 201);" type="text"
+                            name="Addresss" id="Addresss" cols="40" rows="5" placeholder="Enter your address" required>
+                            </textarea>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" value="m" id="dot-1">
+                    <input type="radio" name="gender" value="f" id="dot-2">
+                    <input type="radio" name="gender" value="o" id="dot-3">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Others</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" name="save" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
